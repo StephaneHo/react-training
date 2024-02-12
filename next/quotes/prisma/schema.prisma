@@ -57,25 +57,37 @@ model VerificationToken {
   @@unique([identifier, token])
 }
 
-model Book {
+model Topic {
   id          String @id @default(cuid())
-  slug        String @unique
-  title       String
-  introduction String
+  tag         String @unique
+  name        String 
   quotes      Quote[]
+}
+
+model Author {
+  id String  @id @default(cuid())
+  firstName String
+  lastName String 
+  quotes Quote[] 
+}
+
+model Book {
+  id String  @id @default(cuid())
+  title String
+  quotes Quote[] 
 }
 
 model Quote {
   id      String @id @default(cuid())
-  title   String
   content String
-  bookId  String
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  book     Book      @relation(fields: [bookId], references: [id])
+  topicId  String
   comments Comment[]
+  authorId  String?
+  bookId   String?
+
+  topic    Topic @relation(fields: [topicId], references: [id])
+  author Author? @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  book   Book? @relation(fields: [bookId], references: [id], onDelete: Cascade)
 }
 
 model Comment {
@@ -93,3 +105,4 @@ model Comment {
   user     User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   children Comment[] @relation("Comments")
 }
+

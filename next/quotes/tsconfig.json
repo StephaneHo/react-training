@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/books/test.t+js"
+    "src/app/books/test.t+js",
+    "src/components/common/form"
   ],
   "exclude": ["node_modules"]
 }

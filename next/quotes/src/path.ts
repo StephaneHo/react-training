@@ -2,13 +2,13 @@ export const paths = {
   home() {
     return "/";
   },
-  bookShow(bookSlug: string) {
-    return `/books/${bookSlug}`;
+  topicShow(tag: string) {
+    return `/topics/${tag}`;
   },
-  commentCreate(bookSlug: string) {
-    return `/books/${bookSlug}/comments/new`;
+  quoteCreate(tag: string) {
+    return `/topics/${tag}/quotes/new`;
   },
-  commentShow(bookSlug: string, commentId: string) {
-    return `/books/${bookSlug}/comments/${commentId}`;
+  quoteShow(tag: string, quoteId: string) {
+    return `/topics/${tag}/quotes/${quoteId}`;
   },
 };
