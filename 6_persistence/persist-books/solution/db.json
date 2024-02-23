@@ -1,0 +1,22 @@
+{
+  "music": [],
+  "cats": [],
+  "books": [
+    {
+      "title": "Hunger Games",
+      "id": 2
+    },
+    {
+      "title": "L'alchimiste",
+      "id": 3
+    },
+    {
+      "title": "Le pays ou l'on n'arrive jamais",
+      "id": 4
+    },
+    {
+      "title": "another blue 2",
+      "id": 5
+    }
+  ]
+}
