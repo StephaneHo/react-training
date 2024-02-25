@@ -1,8 +1,10 @@
-const tableau = [1, 2, 3];
+const tableau = ["a", "b", "c"];
 const res1 = tableau.slice(); // [1, 2, 3]
 console.log(res1);
+
 const res2 = tableau.slice(1); // [2, 3]
 console.log(res2);
+
 const res3 = tableau.slice(0, 1); // [1]
 console.log(res3);
 

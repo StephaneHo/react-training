@@ -12,7 +12,7 @@ function App() {
     <>
       <p>Je choisis ces equipements</p>
       {EQUIPMENTS.map(({ name, price }) => (
-        <Equipment name={name} price={price} key={name} />
+        <Equipment name={name} price={price} key={name} color="red" />
       ))}
     </>
   );

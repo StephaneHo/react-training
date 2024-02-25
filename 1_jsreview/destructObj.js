@@ -3,9 +3,8 @@ const personne = {
   prenom: "Julie",
   civilite: "MME",
 };
-
 const { nom, prenom } = personne;
 console.log(nom);
 
-const { nom: familyName, prenom: firstName } = personne;
-console.log(firstName);
+const { nom: myFamilyName, prenom: firstName } = personne;
+console.log(myFamilyName);

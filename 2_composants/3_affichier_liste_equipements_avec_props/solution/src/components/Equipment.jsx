@@ -13,6 +13,7 @@ export const Equipment = (props) => {
     <div>
       <p>{props.name}</p>
       <p>{props.price}</p>
+      <p>{props.color}</p>
     </div>
   );
 };

@@ -1,2 +1,2 @@
-import bar from "./helper2";
-console.log(bar());
+import test from "./helper2";
+console.log(test());

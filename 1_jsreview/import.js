@@ -1,3 +1,4 @@
-import { apiKey, apiKey2 } from "./helper.js"; // index.js
+import { apiKey, apiKey2, key } from "./helper.js"; // index.js
 console.log(apiKey);
 console.log(apiKey2);
+console.log(key);

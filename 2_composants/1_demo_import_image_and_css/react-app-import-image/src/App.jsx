@@ -1,8 +1,10 @@
+import monImage from  
+
 function App() {
   return (
     <div>
       <p>Nacelle articulee diesel</p>
-      {/* insert image */}
+      <img src="./src/assets/nacelleImg.jpg" />
     </div>
   );
 }
